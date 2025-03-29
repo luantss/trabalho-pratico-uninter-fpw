@@ -1,0 +1,371 @@
+/* Resetando margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte padrão */
+html, body {
+    height: 100vh; /* Usa a altura total da tela */
+    overflow: hidden; /* Impede o rolamento */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    color: #403F3D;
+    background-color: #A6A6A6;
+}
+
+/* Faz o conteúdo crescer e empurrar o footer para baixo */
+main {
+    flex: 1;
+    padding: 20px;
+    overflow: auto; /* Permite rolagem dentro do main, se necessário */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Header e navegação */
+header {
+    background-color: #D9D9D9;
+    padding: 20px;
+}
+
+/* Estilos para a lista de navegação */
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    display: flex; 
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo para cada item da navegação */
+nav li {
+    margin: 0 15px; /* Adiciona espaço entre os itens da lista */
+}
+
+/* Estilo para os links de navegação */
+nav a {
+    color: #0D0D0D; 
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s ease; /* Adiciona efeito suave na mudança de cor */
+}
+
+/* Estilo para o efeito hover do link */
+nav a:hover {
+    color: #737272; /* Altera a cor do link ao passar o mouse */
+}
+
+
+nav a:hover {
+    color: #737272;
+}
+
+/* Seção do Banner */
+#banner {
+    background-color: #0D0D0D;
+    color: #D9D9D9;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 15px; /* Bordas arredondadas para o banner */
+}
+
+#banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Seção de Imagem */
+#imagem {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#imagem img {
+    max-width: 30%;  /* Aumenta o tamanho da imagem */
+    height: auto;
+    border-radius: 15px; /* Bordas mais arredondadas */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra mais forte para destacar a imagem */
+    transition: transform 0.3s ease; /* Animação para zoom */
+}
+
+/* Estilo para a seção Sobre Mim */
+#sobre {
+    padding: 60px 20px; /* Adiciona espaço ao redor da seção */
+    display: flex; /* Exibe os itens em linha (flexbox) */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Estilo para o container dentro da seção Sobre Mim */
+#sobre .container {
+    display: flex; /* Exibe os itens em linha (flexbox) */
+    flex-direction: row; /* Organiza os itens da container em uma linha */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    max-width: 900px; /* Limita a largura máxima do container */
+    background-color: #D9D9D9; /* Cor de fundo do container */
+    padding: 30px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Arredonda as bordas do container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor */
+}
+
+/* Estilo para o texto dentro da seção Sobre Mim */
+#sobre .texto {
+    flex: 1; /* Faz com que o texto ocupe o espaço disponível */
+    padding-right: 20px; 
+}
+
+/* Estilo para o título da seção Sobre Mim */
+#sobre h2 {
+    font-size: 2rem; 
+    margin-bottom: 15px; /* Adiciona espaço abaixo do título */
+    color: #0D0D0D; 
+}
+
+/* Estilo para o parágrafo dentro da seção Sobre Mim */
+#sobre p {
+    font-size: 1.1rem; 
+    color: #403F3D; 
+    line-height: 1.5; /* Define o espaçamento entre as linhas */
+}
+
+/* Estilo para a imagem dentro da seção Sobre Mim */
+#sobre .imagem img {
+    max-width: 200px; 
+    border-radius: 10px; /* Arredonda as bordas da imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra a imagem */
+}
+
+/* Estilo para a seção Formação */
+#formacao {
+    padding: 60px 20px; 
+    display: flex; 
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Estilo para o container dentro da seção Formação */
+#formacao .container {
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    max-width: 900px; /* Limita a largura máxima do container */
+    background-color: #D9D9D9; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor */
+}
+
+/* Estilo para o texto dentro da seção Formação */
+#formacao .texto {
+    flex: 1; /* Faz com que o texto ocupe o espaço disponível */
+    padding-right: 20px; 
+}
+
+/* Estilo para o título da seção Formação */
+#formacao h2 {
+    font-size: 2rem; 
+    margin-bottom: 15px; 
+    color: #0D0D0D; 
+}
+
+/* Estilo para a lista de formação */
+#formacao ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; 
+}
+
+/* Estilo para os itens da lista na seção Formação */
+#formacao ul li {
+    font-size: 1.1rem; 
+    color: #403F3D; 
+    margin-bottom: 10px; /* Adiciona espaço entre os itens */
+}
+
+/* Estilo para a imagem dentro da seção Formação */
+#formacao .imagem img {
+    max-width: 180px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra a imagem */
+}
+
+/* Estilo para a seção Portfólio */
+#portfolio {
+    padding: 60px 20px; /* Adiciona espaço ao redor da seção */
+    text-align: center; 
+}
+
+/* Estilo para o container dentro da seção Portfólio */
+#portfolio .container {
+    max-width: 900px; 
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+/* Estilo para o título da seção Portfólio */
+#portfolio h2 {
+    font-size: 2rem; 
+    margin-bottom: 15px; 
+    color: #0D0D0D; 
+}
+
+/* Seção de Contato */
+#contato {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #D9D9D9; /* Cor de fundo para a seção */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Título da seção de Contato */
+#contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0D0D0D; /* Cor do título */
+}
+
+/* Estilo do formulário */
+#contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os campos */
+}
+
+/* Estilo para o rótulo do campo de formulário */
+#contato form label {
+    font-size: 1.1rem;
+    color: #403F3D;
+    text-align: left;
+    width: 100%;
+}
+
+/* Estilo dos campos de entrada e área de texto */
+#contato form input,
+#contato form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Estilo do botão de envio */
+#contato form button {
+    background-color: #0D0D0D; /* Cor de fundo do botão */
+    color: #ffffff;
+    font-size: 1.1rem;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito no botão de envio ao passar o mouse */
+#contato form button:hover {
+    background-color: #606060; /* Cor mais clara no hover */
+}
+
+/* Estilo para o container de projetos */
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilo individual para cada projeto */
+.projeto {
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+}
+
+/* Estilo da imagem dentro de cada projeto */
+.projeto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o título do projeto */
+.projeto h3 {
+    font-size: 1.5rem;
+    color: #0D0D0D;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a descrição do projeto */
+.projeto p {
+    font-size: 1rem;
+    color: #403F3D;
+    margin-bottom: 15px;
+}
+
+/* Estilo para o link de cada projeto */
+.projeto a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0D0D0D;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre o botão de link */
+.projeto a:hover {
+    background-color: #606060;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #D9D9D9;
+    color: #0D0D0D;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Estilo da lista de redes sociais no rodapé */
+footer .social {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+}
+
+/* Estilo para cada item da lista de redes sociais */
+footer .social li {
+    display: inline-block; /* Exibe os itens de forma horizontal */
+    margin: 0 15px;
+}
+
+/* Estilo para os links das redes sociais */
+footer .social a {
+    color: #0D0D0D;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold;
+}
+
+/* Efeito de hover nos links das redes sociais */
+footer .social a:hover {
+    color: #085A8C;
+}
